@@ -1,48 +1,51 @@
-header {
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px; 
-  background-color:  rgb(97, 11, 196);
-  font-size: 20px
-}
-footer {
-  
-background-color:  rgb(97, 11, 196);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  
-  
-}
+/*Makes full body of the page have a background of purple, using RGB code. Body wraps the entirety of the base, excluding the head peices, so this creates a full background.*/
 body {
   background-color:  rgb(97, 11, 196);
-
 }
+
+/*modifying the header style - Lowering space above and below the elements here are purely for spacing purposes, but I may go back to try and get fancier.*/
+header {
+  margin-top: 0px;
+  margin-bottom: 10px; 
+}
+
+main {
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+footer {  
+  margin-top: 10px;
+  margin-bottom: 0px;   
+}
+
+/*Declaring various styling elements to call for text throughout the code. I did not change the size for most, as I think the sizing as is tends to be sufficient. the size is not changes for h1-h4 nor for the base p. The elements here are color and the font family, with some alternatives for each*/
 h1 {
   color: white;
   font-family: 'Brush Script MT', cursive;
 }
 
 h2 {
-  
   color: white;
   font-family: 'Brush Script MT', cursive;
-      margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 h3 {
-  text-align: center;
   color: white;
   font-family: 'Brush Script MT', cursive;
-    margin-top: 10px;
-  margin-bottom: 10px;
 }
 
+h4 {
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+}
+/* simple text for the general paragraph, turned white to stand out on the box background. This one is different from the rest, as I wanted the general text to be set off. I additionally shrunk the size down a bit*/
 p {
+  font-size: 10
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Creating the style of the horizontal seperation to create a defined black line to set things off*/
 hr {
   height: 4px;
   background-color: black;
@@ -50,18 +53,43 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+/*these two functions are the core of creating the black background boxes. .box initialized the black background while .round rounds off the edges.*/
 .box {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-  margin: 20px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin: 10px;
 }
 
 .round {
   border-radius: 25px;
 }
 
+/*class to use to center text when needed*/
+.text-centered {
+  text-align: center;
+}
+/*limit image widge because I dont like my face much and the I'd like to limit the size and center images*/
 img {
-  width: 350px
+  text-align: center;
+  width: 350px;
+}
+
+/* Default Links, prior to visiting*/
+a:link {
+  font-family: arial;
+  text-decoration: underline;
+  color: cyan; /* Looks better than the usual blue on the black background */
+}
+
+/* Visited Link changed color to blue*/
+a:visited {
+    font-family: arial;
+    text-decoration: underline;
+    color: blue;
+}
+
+/*Wrapping things around to 700, which is half the img width Looks good here.*/
+.wrapper {
+  width: 700px;
 }

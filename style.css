@@ -45,13 +45,14 @@ p {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* Creating the style of the horizontal seperation to create a defined black line to set things off*/
+/* Creating the style of the horizontal seperation to create a defined black line to set things off. I was experimenting with trying to get this to align to the center within the contect of the wrapping. It took some time, but it is centered perfectly by way of percentages for margins. Now, it will be 10% away from the edges within the wrapped amount called later - 800*/
 hr {
-  height: 4px;
+  height: 2px;
+  width: 80%;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
   background-color: black;
   border: 2px solid black;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 /*these two functions are the core of creating the black background boxes. .box initialized the black background while .round rounds off the edges.*/
 .box {
@@ -91,5 +92,5 @@ a:visited {
 
 /*Wrapping things around to 700, which is half the img width Looks good here.*/
 .wrapper {
-  width: 700px;
+  width: 800px;
 }
